@@ -2738,7 +2738,7 @@ html {
   .mx-xl-auto {
     margin-left: auto !important; } }
 
-.header__contact-link {
+.header__logo, .header__features, .header__contact-link {
   text-align: center; }
 
 .cap {
@@ -2765,8 +2765,8 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
   position: relative; }
   .header .container {
-    padding-top: 5rem;
-    padding-bottom: 1rem;
+    padding-top: 6rem;
+    padding-bottom: 1.5rem;
     position: relative;
     z-index: 2; }
 
@@ -2780,11 +2780,6 @@ h1, h2, h3, h4, h5, h6 {
   opacity: .8;
   z-index: 1; }
 
-.header__h1 {
-  border: 1px solid #ddd;
-  text-align: center;
-  padding: .5rem; }
-
 .header__logo {
   font-family: Merriweather, serif;
   font-size: 1.5rem;
@@ -2795,9 +2790,17 @@ h1, h2, h3, h4, h5, h6 {
   height: 3rem;
   line-height: 3rem;
   position: absolute;
-  top: 1rem;
+  top: 1.5rem;
   left: 50%;
   transform: translateX(-50%); }
+
+.header__h1 {
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: .5rem; }
+
+.header__features {
+  margin-bottom: 1.5rem; }
 
 .header__contact-link {
   color: white;

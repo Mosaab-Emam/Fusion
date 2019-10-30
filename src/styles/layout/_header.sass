@@ -4,8 +4,8 @@
     color: white
     position: relative
     & .container
-        padding-top: 5rem
-        padding-bottom: 1rem
+        padding-top: 6rem
+        padding-bottom: $marginSmall
         position: relative
         z-index: 2
 
@@ -19,12 +19,8 @@
     opacity: .8
     z-index: 1
 
-.header__h1
-    border: 1px solid #ddd
-    text-align: center
-    padding: .5rem
-
 .header__logo
+    @extend %center
     font-family: Merriweather, serif
     font-size: 1.5rem
     color: $orange
@@ -34,9 +30,18 @@
     height: 3rem
     line-height: 3rem
     position: absolute
-    top: 1rem
+    top: $marginSmall
     left: 50%
     transform: translateX(-50%)
+
+.header__h1
+    border: 1px solid #ddd
+    text-align: center
+    padding: .5rem
+
+.header__features
+    @extend %center
+    margin-bottom: $marginSmall
 
 .header__contact-link
     @extend %center
