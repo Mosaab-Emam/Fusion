@@ -2737,3 +2737,71 @@ html {
   .ml-xl-auto,
   .mx-xl-auto {
     margin-left: auto !important; } }
+
+.header__contact-link {
+  text-align: center; }
+
+.cap {
+  text-transform: capitalize; }
+
+.upper {
+  text-transform: uppercase; }
+
+.center {
+  text-align: center; }
+
+.orange {
+  color: #f7ac53; }
+
+body {
+  font-family: 'Open Sans', sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Merriweather, serif; }
+
+.header {
+  background: url("../images/header-bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  position: relative; }
+  .header .container {
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+    position: relative;
+    z-index: 2; }
+
+.header__overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #434343;
+  opacity: .8;
+  z-index: 1; }
+
+.header__h1 {
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: .5rem; }
+
+.header__logo {
+  font-family: Merriweather, serif;
+  font-size: 1.5rem;
+  color: #f7ac53;
+  border: 2px solid #f7ac53;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  line-height: 3rem;
+  position: absolute;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%); }
+
+.header__contact-link {
+  color: white;
+  display: block; }
+
+.header__contact-link:hover {
+  color: #f7ac53; }
