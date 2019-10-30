@@ -4,6 +4,7 @@ var pug = require("gulp-pug");
 var sass = require("gulp-sass");
 var prefixer = require("gulp-autoprefixer");
 var uglify = require("gulp-uglify");
+var connect = require('gulp-connect');
 
 sass.compiler = require("node-sass");
 
@@ -11,7 +12,8 @@ gulp.task("pug", function() {
   return gulp
     .src("./views/index.pug")
     .pipe(pug())
-    .pipe(gulp.dest("../dist"));
+    .pipe(gulp.dest("../dist"))
+    .pipe(connect.reload());
 });
 
 // Compile sass files
@@ -22,6 +24,7 @@ gulp.task("sass", function() {
       .pipe(sass().on("error", sass.logError))
       .pipe(prefixer())
       .pipe(gulp.dest("../dist/css"))
+      .pipe(connect.reload())
   );
 });
 
@@ -31,7 +34,8 @@ gulp.task("js", function() {
     .src("./scripts/*.js")
     .pipe(concat("main.js"))
     .pipe(uglify())
-    .pipe(gulp.dest("../dist/js"));
+    .pipe(gulp.dest("../dist/js"))
+    .pipe(connect.reload());
 });
 
 // Watch files
@@ -41,4 +45,12 @@ gulp.task("watch", function() {
   gulp.watch("./scripts/**/*.js", gulp.parallel("js"));
 });
 
-gulp.task("default", gulp.series("pug", "sass", "js", "watch"));
+gulp.task('connect', function(cb) {
+  connect.server({
+    root: '../dist',
+    livereload: true
+  });
+  cb();
+});
+
+gulp.task("default", gulp.series("pug", "sass", "js", "connect", "watch"));
