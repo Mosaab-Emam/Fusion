@@ -3,3 +3,25 @@ body
 
 h1, h2, h3, h4, h5, h6
     font-family: Merriweather, serif
+
+section
+    padding-bottom: $marginSmall
+    color: white
+    .v-line
+        @extend %center
+        width: 2px
+        height: 50px
+        background: $orange
+        margin: auto
+        margin-bottom: .5rem
+    .section-name
+        @extend %center
+        @extend %uppercase
+        color: $orange
+        font-size: .75rem
+        font-weight: bold
+        margin-bottom: $marginSmall
+    .section-title
+        @extend %center
+        font-weight: normal
+        margin-bottom: $marginSmall

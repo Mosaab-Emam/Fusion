@@ -1,3 +1,5 @@
+include includes/mixins
+
 doctype html
 html
     head
@@ -15,4 +17,17 @@ html
                 p.header__features
                     | Strategy <span class="orange">|</span> Branding <span class="orange">|</span> Design
                 .header__logo F
-                a.header__contact-link.upper(href="#") Get in touch
+                a.header__contact-link(href="#") Get in touch
+        section.services
+            .container
+                .row
+                    .col-12
+                        .v-line
+                    .col-12
+                        .section-name Our services
+                    .col-12
+                        h2.section-title We will take your business presence to a new level
+                .row
+                    +servicesBox('Strategy')
+                    +servicesBox('Branding')
+                    +servicesBox('Design')

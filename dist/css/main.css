@@ -2738,8 +2738,16 @@ html {
   .mx-xl-auto {
     margin-left: auto !important; } }
 
-.header__logo, .header__features, .header__contact-link {
+section .v-line, section .section-name, section .section-title, .header__logo, .header__features, .header__contact-link {
   text-align: center; }
+
+section .section-name, .header__contact-link, .services__box-link {
+  text-transform: uppercase; }
+
+.header__contact-link, .services__box-link {
+  color: white; }
+  .header__contact-link:hover, .services__box-link:hover {
+    color: #f7ac53; }
 
 .cap {
   text-transform: capitalize; }
@@ -2759,6 +2767,24 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: Merriweather, serif; }
 
+section {
+  padding-bottom: 1.5rem;
+  color: white; }
+  section .v-line {
+    width: 2px;
+    height: 50px;
+    background: #f7ac53;
+    margin: auto;
+    margin-bottom: .5rem; }
+  section .section-name {
+    color: #f7ac53;
+    font-size: .75rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem; }
+  section .section-title {
+    font-weight: normal;
+    margin-bottom: 1.5rem; }
+
 .header {
   background: url("../images/header-bg.jpg") no-repeat center center fixed;
   background-size: cover;
@@ -2776,7 +2802,7 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0;
   left: 0;
   right: 0;
-  background: #434343;
+  background: #303030;
   opacity: .8;
   z-index: 1; }
 
@@ -2803,8 +2829,20 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1.5rem; }
 
 .header__contact-link {
-  color: white;
   display: block; }
 
-.header__contact-link:hover {
-  color: #f7ac53; }
+.services {
+  background: #303030; }
+
+.services__box {
+  margin-bottom: 1.5rem; }
+
+.services__box-heading {
+  font-weight: normal; }
+
+.services__box-description {
+  font-size: .85rem;
+  color: #999; }
+
+.services__box-link {
+  font-size: .85rem; }
