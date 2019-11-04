@@ -1,5 +1,7 @@
+include partials/sectionTopmost
+include partials/carousel
+include partials/logos
 include mixins/servicesBox
-include mixins/carousel
 
 doctype html
 html
@@ -21,27 +23,28 @@ html
                 a.header__contact-link(href="#") Get in touch
         section.services
             .container
-                .row
-                    .col-12
-                        .v-line
-                    .col-12
-                        .section-name Our services
-                    .col-12
-                        h2.section-title We will take your business presence to a new level
+                +sectionTopmost(
+                    'Our services',
+                    'We will take your business presence to a new level'
+                )
                 .row
                     +servicesBox('Strategy')
                     +servicesBox('Branding')
                     +servicesBox('Design')
         section.projects
             .container
-                .row
-                    .col-12
-                        .v-line
-                    .col-12
-                        .section-name Branding &amp; Design
+                +sectionTopmost('Branding & Design')
                 .row
                     .col-12
                         +carousel
+        section.testimonials
+            .container
+                +sectionTopmost(
+                    'Testimonials',
+                    'We have worked with some amazing companies around the world'
+                )
+                +logos()
+
         script(src="js/jquery.min.js")
         script(src="js/popper.min.js")
         script(src="js/util.js")

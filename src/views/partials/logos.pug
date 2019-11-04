@@ -1,0 +1,38 @@
+-
+    var logos = [
+        {
+            src: "images/1.png",
+            alt: "Autodesk"
+        },
+        {
+            src: "images/2.png",
+            alt: "Master Card"
+        },
+        {
+            src: "images/3.png",
+            alt: "Intuit"
+        },
+        {
+            src: "images/4.png",
+            alt: "MTV"
+        },
+        {
+            src: "images/5.png",
+            alt: "Pinterest"
+        },
+        {
+            src: "images/6.png",
+            alt: "Salesforce"
+        },
+        {
+            src: "images/7.png",
+            alt: "VISA"
+        }
+    ]
+
+mixin logos()
+    .row
+        each val, index in logos
+            .col-12
+                .testimonials__logo(class= index+1==logos.length ? 'testimonials__logo--last' : '')
+                    img(src=logos[index].src, alt=logos[index].alt)

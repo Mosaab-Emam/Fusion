@@ -2889,7 +2889,7 @@ html {
   color: #fff;
   text-align: center; }
 
-section .v-line, section .section-name, section .section-title, .header__logo, .header__features, .header__contact-link {
+section .v-line, section .section-name, section .section-title, .header__logo, .header__features, .header__contact-link, .testimonials__logo {
   text-align: center; }
 
 section .section-name, .header__contact-link, .services__box-link {
@@ -3021,3 +3021,12 @@ section {
       margin-top: .5rem; }
       .projects .carousel-caption .links a:first-of-type {
         margin-right: .5rem; }
+
+.testimonials {
+  background: #303030; }
+
+.testimonials__logo {
+  margin-bottom: 1rem; }
+
+.testimonials__logo--last {
+  margin-bottom: 0; }
