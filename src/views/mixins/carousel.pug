@@ -1,0 +1,33 @@
+-
+    var images = [
+        {
+            src: './testingPictures/one.jpg',
+            alt: 'First project'
+        },
+        {
+            src: './testingPictures/two.jpg',
+            alt: 'Second project'
+        },
+        {
+            src: './testingPictures/three.jpg',
+            alt: 'Third project'
+        }
+    ]
+
+mixin carousel()
+    #projectsCarousel.carousel.slides
+        ol.carousel-indicators
+            each val, index in images
+                if index == 0
+                    li.active(data-target="#projectsCarousel", data-slide-to=index)
+                else
+                    li(data-target="#projectsCarousel", data-slide-to=index)
+        .carousel-inner
+            each val, index in images
+                .carousel-item(class=index==0 ? 'active' : '')
+                    img.d-block(src=images[index].src, alt=images[index].alt)
+                    .carousel-caption
+                        h3= images[index].alt
+                        .links
+                            a(href="#") Project Details
+                            a(href="#") View Slides

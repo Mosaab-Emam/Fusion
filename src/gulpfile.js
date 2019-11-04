@@ -39,10 +39,11 @@ gulp.task("js", function() {
 });
 
 // Watch files
-gulp.task("watch", function() {
+gulp.task("watch", function(cb) {
   gulp.watch("./views/**/*.pug", gulp.parallel("pug"));
   gulp.watch("./styles/**/*.sass", gulp.parallel("sass"));
   gulp.watch("./scripts/**/*.js", gulp.parallel("js"));
+  cb();
 });
 
 gulp.task('connect', function(cb) {

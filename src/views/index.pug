@@ -1,4 +1,5 @@
-include includes/mixins
+include mixins/servicesBox
+include mixins/carousel
 
 doctype html
 html
@@ -31,3 +32,18 @@ html
                     +servicesBox('Strategy')
                     +servicesBox('Branding')
                     +servicesBox('Design')
+        section.projects
+            .container
+                .row
+                    .col-12
+                        .v-line
+                    .col-12
+                        .section-name Branding &amp; Design
+                .row
+                    .col-12
+                        +carousel
+        script(src="js/jquery.min.js")
+        script(src="js/popper.min.js")
+        script(src="js/util.js")
+        script(src="js/carousel.js")
+        script(src="js/main.js")
