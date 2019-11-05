@@ -1,7 +1,9 @@
 include partials/sectionTopmost
-include partials/carousel
+include partials/servicesBox
+include partials/projectsCarousel
 include partials/logos
-include mixins/servicesBox
+include partials/logosCarousel
+include partials/member
 
 doctype html
 html
@@ -36,7 +38,7 @@ html
                 +sectionTopmost('Branding & Design')
                 .row
                     .col-12
-                        +carousel
+                        +projectsCarousel
         section.testimonials
             .container
                 +sectionTopmost(
@@ -44,6 +46,27 @@ html
                     'We have worked with some amazing companies around the world'
                 )
                 +logos()
+                +logosCarousel()
+        section.team
+            .container
+                +sectionTopmost('Our team', 'Meet our amazing team')
+                .row
+                    .col-12
+                        .founder
+                            .founder__card
+                                .founder__img
+                                .founder__info
+                                    p.founder__name Vincent Gardner
+                                    p.founder__position Founder &amp; CEO
+                            .founder__bio
+                                | Vincent is the Founder &amp; CEO of Fusion. He is leading the company to success with his experience &amp; skill. Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, tempora? Quas maxime voluptatum saepe reprehenderit? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, nam!
+                    +member('', 'Danna Watson', 'VP of Product')
+                    +member('', 'Danna Watson', 'VP of Product')
+                    +member('', 'Danna Watson', 'VP of Product')
+                    +member('', 'Danna Watson', 'VP of Product')
+                    +member('', 'Danna Watson', 'VP of Product')
+                    +member('', 'Danna Watson', 'VP of Product')
+                    +member('', 'Danna Watson', 'VP of Product', true)
 
         script(src="js/jquery.min.js")
         script(src="js/popper.min.js")

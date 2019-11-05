@@ -2889,10 +2889,10 @@ html {
   color: #fff;
   text-align: center; }
 
-section .v-line, section .section-name, section .section-title, .header__logo, .header__features, .header__contact-link, .testimonials__logo {
+section .v-line, section .section-name, section .section-title, .header__logo, .header__features, .header__contact-link, .testimonials__logo, .member {
   text-align: center; }
 
-section .section-name, .header__contact-link, .services__box-link {
+section .section-name, .header__contact-link, .services__box-link, .founder__name, .member__name {
   text-transform: uppercase; }
 
 .cap {
@@ -2903,6 +2903,9 @@ section .section-name, .header__contact-link, .services__box-link {
 
 .center {
   text-align: center; }
+
+.mb-0 {
+  margin-bottom: 0; }
 
 .orange {
   color: #f7ac53; }
@@ -3030,3 +3033,54 @@ section {
 
 .testimonials__logo--last {
   margin-bottom: 0; }
+
+.team {
+  background: black; }
+
+.founder {
+  position: relative; }
+
+.founder__card {
+  display: flex;
+  position: absolute;
+  border-left: 1px solid #f7ac53;
+  border-bottom: 1px solid #f7ac53;
+  padding-left: .25rem;
+  padding-bottom: .25rem;
+  transform: rotate(90deg) translate(40%, 185%); }
+
+.founder__info {
+  margin-right: 1rem; }
+
+.founder__img {
+  width: 3rem;
+  height: 3rem;
+  margin-right: .5rem;
+  background: #dddddd;
+  border-radius: 50%; }
+
+.founder__name, .member__name,
+.founder__position {
+  margin-bottom: 0; }
+
+.founder__name, .member__name {
+  color: #f7ac53;
+  font-weight: bold; }
+
+.founder__bio {
+  margin-left: 4rem; }
+
+.member {
+  margin-bottom: 2rem; }
+
+.member__img {
+  display: inline-block;
+  width: 6rem;
+  height: 6rem;
+  background: #dddddd;
+  border-radius: 50%; }
+
+.member__name {
+  margin: .5rem 0; }
+  .member__name ~ p {
+    margin-bottom: 0; }

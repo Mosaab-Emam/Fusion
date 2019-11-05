@@ -1,0 +1,6 @@
+mixin member(imageName, name, position, isLast)
+    .col-12
+        .member(class=isLast?'mb-0':'')
+            .member__img
+            p.member__name= name
+            p= position
