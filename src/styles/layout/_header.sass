@@ -3,11 +3,16 @@
     background-size: cover
     color: white
     position: relative
-    & .container
+    .container
         padding-top: 6rem
         padding-bottom: $marginSmall
         position: relative
         z-index: 2
+    .site-logo
+        position: absolute
+        top: $marginSmall
+        left: 50%
+        transform: translateX(-50%)
 
 .header__overlay
     position: absolute
@@ -17,22 +22,7 @@
     right: 0
     background: $semiDark
     opacity: .8
-    z-index: 1
-
-.header__logo
-    @extend %center
-    font-family: Merriweather, serif
-    font-size: 1.5rem
-    color: $orange
-    border: 2px solid $orange
-    border-radius: 50%
-    width: 3rem
-    height: 3rem
-    line-height: 3rem
-    position: absolute
-    top: $marginSmall
-    left: 50%
-    transform: translateX(-50%)
+    z-index: 1    
 
 .header__h1
     border: 1px solid #ddd

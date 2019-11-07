@@ -4,6 +4,8 @@ include partials/projectsCarousel
 include partials/logos
 include partials/logosCarousel
 include partials/member
+include partials/addressBox
+include partials/socialLinks
 
 doctype html
 html
@@ -21,7 +23,7 @@ html
                     | We are <span class="orange">Fusion</span>, we build things for human!
                 p.header__features
                     | Strategy <span class="orange">|</span> Branding <span class="orange">|</span> Design
-                .header__logo F
+                .site-logo F
                 a.header__contact-link(href="#") Get in touch
         section.services
             .container
@@ -67,6 +69,51 @@ html
                     +member('', 'Danna Watson', 'VP of Product')
                     +member('', 'Danna Watson', 'VP of Product')
                     +member('', 'Danna Watson', 'VP of Product', true)
+        section.contact
+            .container
+                +sectionTopmost('Contact us', 'Lets talk about your business')
+                .row
+                    .col-12
+                        form
+                            .form-row
+                                .form-group.col-12.col-md-6
+                                    input.form-control(type="text", placeholder="Your Name")
+                                .form-group.col-12.col-md-6
+                                    input.form-control(type="email", placeholder="Your Email")
+                            .form-row
+                                .form-group.col-12.col-md-6
+                                    input.form-control(type="text", placeholder="Company")
+                                .form-group.col-12.col-md-6
+                                    input.form-control(type="text", placeholder="Subject")
+                            .form-row
+                                .form-group.col-12
+                                    textarea.form-control(placeholder="Message")
+                            .form-row
+                                button(type="submit") Get in touch
+        footer
+            .container
+                .row
+                    .col-12
+                        .site-logo F
+                    .col-12
+                        +addressBox(
+                            'California Office',
+                            '4243 Woodland Terrace',
+                            'Sacramento, CA 95814',
+                            '916 753 2645'
+                        )
+                    .col-12
+                        +addressBox(
+                            'New York Office',
+                            '885 Oakwood Avenue',
+                            'New York, NY 10013',
+                            '212 660 0744'
+                        )
+                    .col-12
+                        .other-contacts
+                            h4.upper Other contacts
+                            p.other-contacts__line jobs@templateocean.com
+                            +socialLinks
 
         script(src="js/jquery.min.js")
         script(src="js/popper.min.js")

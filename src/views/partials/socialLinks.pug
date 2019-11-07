@@ -1,0 +1,8 @@
+-
+    var socialNetworks = ['facebook', 'twitter', 'instagram', 'pinterest', 'dribbble']
+
+mixin socialLinks()
+    ul.other-contacts__social-links
+        each val in socialNetworks
+            li.other-contacts__social-link
+                i(class=`icon-${val}`)

@@ -1,0 +1,43 @@
+footer
+    padding: $marginSmall 0
+    background: $semiDark
+    color: white
+    .site-logo
+        margin: 0 auto 2rem
+
+.address-box
+    @extend %center
+    margin-bottom: 2rem
+
+.address-box__heading
+    @extend %uppercase
+
+.address-box__line
+    @extend %smallText
+    margin-bottom: 0
+
+.other-contacts
+    @extend %center
+
+.other-contacts__line
+    @extend .address-box__line
+
+.other-contacts__social-links
+    list-style: none
+    padding-left: 0
+    margin-top: 1rem
+    display: flex
+    justify-content: center
+
+.other-contacts__social-link
+    background: #aaa
+    color: black
+    border-radius: 50%
+    padding: .25rem
+    margin-left: .25rem
+    margin-right: .25rem
+    cursor: pointer
+    transition: all .3s ease-in-out
+    &:hover
+        background: black
+        color: #aaa

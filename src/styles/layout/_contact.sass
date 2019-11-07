@@ -1,0 +1,25 @@
+.contact
+    background: $semiDark
+
+form
+    background: black
+    padding: 1rem
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 3px 6px rgba(0, 0, 0, 0.23)
+    .form-control
+        border: none
+        border-radius: 0
+        border-bottom: 2px solid white
+        transition: none
+        background: transparent
+        color: white !important
+        transition: border-bottom-color .3s ease-in-out
+        &:focus
+            box-shadow: none
+            background: transparent
+            border-bottom-color: $orange
+    button
+        @extend %uppercase
+        background: $orange
+        border: none
+        padding: .5rem 2rem
+        margin: auto
