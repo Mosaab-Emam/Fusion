@@ -1,6 +1,6 @@
 include partials/head
 include partials/sectionTopmost
-include partials/servicesBox
+include partials/serviceBoxes
 include partials/projectsCarousel
 include partials/logos
 include partials/logosCarousel
@@ -33,10 +33,7 @@ html
                     'Our services',
                     'We will take your business presence to a new level'
                 )
-                .row
-                    +servicesBox('Strategy')
-                    +servicesBox('Branding')
-                    +servicesBox('Design')
+                +serviceBoxes
         section.projects
             .container
                 +sectionTopmost('Branding & Design')

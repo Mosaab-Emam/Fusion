@@ -3581,10 +3581,13 @@ textarea.form-control {
 section .v-line, section .section-name, section .section-title, .site-logo, .header__features, .header__contact-link, .header__angle-down, .testimonials__logo, .member, .address-box, .other-contacts {
   text-align: center; }
 
+.services__box-heading {
+  text-transform: capitalize; }
+
 section .section-name, .header__contact-link, .services__box-link, .founder__name, .member__name, form button, .address-box__heading {
   text-transform: uppercase; }
 
-.address-box__line, .other-contacts__line {
+.services__box-description, .address-box__line, .other-contacts__line {
   font-size: 14px;
   color: #aaa; }
 
@@ -3692,16 +3695,22 @@ section {
 
 .services__box {
   margin-bottom: 1.5rem; }
+  .services__box .top {
+    display: flex;
+    align-items: center; }
+
+.services__box-icon {
+  margin-right: .5rem; }
 
 .services__box-heading {
-  font-weight: normal; }
+  font-weight: normal;
+  margin-bottom: 0; }
 
 .services__box-description {
-  font-size: .85rem;
-  color: #999; }
+  margin-bottom: .5rem; }
 
 .services__box-link {
-  font-size: .85rem; }
+  font-size: 14px; }
 
 .projects {
   background: black; }

@@ -3,14 +3,22 @@
 
 .services__box
     margin-bottom: $marginSmall
+    .top
+        display: flex
+        align-items: center
+
+.services__box-icon
+    margin-right: .5rem
 
 .services__box-heading
+    @extend %capitalize
     font-weight: normal
+    margin-bottom: 0
 
 .services__box-description
-    font-size: .85rem
-    color: #999
+    @extend %smallText
+    margin-bottom: .5rem
 
 .services__box-link
     @extend %uppercase
-    font-size: .85rem
+    font-size: 14px

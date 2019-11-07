@@ -1,0 +1,12 @@
+- var boxes = ['strategy', 'branding', 'design']
+
+mixin serviceBoxes()
+    .row
+        each val in boxes
+            .col-12
+                .services__box
+                    .top
+                        i.services__box-icon.orange(class=`icon-${val}`)
+                        h3.services__box-heading= val
+                    p.services__box-description Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda porro placeat asperiores, corporis perferendis ullam!
+                    a(href="#").services__box-link See details <i class="icon-right"></i>
