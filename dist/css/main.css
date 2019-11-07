@@ -3587,7 +3587,7 @@ section .v-line, section .section-name, section .section-title, .site-logo, .hea
 section .section-name, .header__contact-link, .services__box-link, .founder__name, .member__name, form button, .address-box__heading {
   text-transform: uppercase; }
 
-.services__box-description, .address-box__line, .other-contacts__line {
+.services__box-description, .founder__bio, .address-box__line, .other-contacts__line {
   font-size: 14px;
   color: #aaa; }
 
@@ -3744,7 +3744,8 @@ section {
   background: black; }
 
 .founder {
-  position: relative; }
+  position: relative;
+  margin-bottom: 4rem; }
 
 .founder__card {
   display: flex;
@@ -3753,7 +3754,7 @@ section {
   border-bottom: 1px solid #f7ac53;
   padding-left: .25rem;
   padding-bottom: .25rem;
-  transform: rotate(90deg) translate(40%, 185%); }
+  transform: rotate(90deg) translate(40%, calc(194% - 1rem)); }
 
 .founder__info {
   margin-right: 1rem; }
@@ -3762,7 +3763,6 @@ section {
   width: 3rem;
   height: 3rem;
   margin-right: .5rem;
-  background: #dddddd;
   border-radius: 50%; }
 
 .founder__name, .member__name,
@@ -3774,7 +3774,7 @@ section {
   font-weight: bold; }
 
 .founder__bio {
-  margin-left: 4rem; }
+  margin-left: 5rem; }
 
 .member {
   margin-bottom: 2rem; }
@@ -3787,7 +3787,7 @@ section {
   border-radius: 50%; }
 
 .member__name {
-  margin: .5rem 0; }
+  margin: 1rem 0 0; }
   .member__name ~ p {
     margin-bottom: 0; }
 

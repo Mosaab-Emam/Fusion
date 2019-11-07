@@ -4,7 +4,7 @@ include partials/serviceBoxes
 include partials/projectsCarousel
 include partials/logos
 include partials/logosCarousel
-include partials/member
+include partials/members
 include partials/addressBox
 include partials/socialLinks
 
@@ -55,19 +55,13 @@ html
                     .col-12
                         .founder
                             .founder__card
-                                .founder__img
+                                img.founder__img(src='images/vincent-gardner.png')
                                 .founder__info
                                     p.founder__name Vincent Gardner
                                     p.founder__position Founder &amp; CEO
                             .founder__bio
                                 | Vincent is the Founder &amp; CEO of Fusion. He is leading the company to success with his experience &amp; skill. Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, tempora? Quas maxime voluptatum saepe reprehenderit? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, nam!
-                    +member('', 'Danna Watson', 'VP of Product')
-                    +member('', 'Danna Watson', 'VP of Product')
-                    +member('', 'Danna Watson', 'VP of Product')
-                    +member('', 'Danna Watson', 'VP of Product')
-                    +member('', 'Danna Watson', 'VP of Product')
-                    +member('', 'Danna Watson', 'VP of Product')
-                    +member('', 'Danna Watson', 'VP of Product', true)
+                    +members()
         section.contact
             .container
                 +sectionTopmost('Contact us', 'Lets talk about your business')
