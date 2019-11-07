@@ -3578,7 +3578,7 @@ textarea.form-control {
   100% {
     transform: rotate(359deg); } }
 
-section .v-line, section .section-name, section .section-title, .site-logo, .header__features, .header__contact-link, .testimonials__logo, .member, .address-box, .other-contacts {
+section .v-line, section .section-name, section .section-title, .site-logo, .header__features, .header__contact-link, .header__angle-down, .testimonials__logo, .member, .address-box, .other-contacts {
   text-align: center; }
 
 section .section-name, .header__contact-link, .services__box-link, .founder__name, .member__name, form button, .address-box__heading {
@@ -3679,6 +3679,13 @@ section {
 
 .header__contact-link {
   display: block; }
+
+.header__angle-down {
+  display: block;
+  margin: 1rem auto 0;
+  font-size: 1.25rem;
+  color: #f7ac53;
+  cursor: pointer; }
 
 .services {
   background: #303030; }

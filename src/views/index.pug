@@ -1,3 +1,4 @@
+include partials/head
 include partials/sectionTopmost
 include partials/servicesBox
 include partials/projectsCarousel
@@ -9,22 +10,23 @@ include partials/socialLinks
 
 doctype html
 html
-    head
-        meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        meta(http-equiv="X-UA-Compatible", content="ie=edge")
-        title Fusion landing page
-        link(rel="stylesheet", href="./css/main.css")
+    +head
     body
         header.header
             .header__overlay
             .container
-                h1.header__h1.header__h1--xs.cap
-                    | We are <span class="orange">Fusion</span>, we build things for human!
-                p.header__features
-                    | Strategy <span class="orange">|</span> Branding <span class="orange">|</span> Design
                 .site-logo F
-                a.header__contact-link(href="#") Get in touch
+                .row
+                    .col-12
+                        h1.header__h1.header__h1--xs.cap
+                            | We are <span class="orange">Fusion</span>, we build things for human!
+                    .col-12
+                        p.header__features
+                            | Strategy <span class="orange">|</span> Branding <span class="orange">|</span> Design
+                    .col-12
+                        a.header__contact-link(href="#") Get in touch <i class="icon-right"></i>
+                    .col-12
+                        i.header__angle-down.icon-angle-down
         section.services
             .container
                 +sectionTopmost(
