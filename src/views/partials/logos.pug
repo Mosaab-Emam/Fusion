@@ -33,6 +33,6 @@
 mixin logos()
     .row
         each val, index in logos
-            .col-12
-                .testimonials__logo(class= index+1==logos.length ? 'testimonials__logo--last' : '')
+            .col-12.col-lg(class=index+1==logos.length ? '' : 'col-sm-6 col-md-4')
+                .testimonials__logo(class= index+1==logos.length ? 'mb-0' : '')
                     img(src=logos[index].src, alt=logos[index].alt)

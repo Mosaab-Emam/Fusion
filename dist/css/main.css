@@ -3606,9 +3606,6 @@ section .section-name, .header__contact-link, .services__box-link, .founder__nam
 .center {
   text-align: center; }
 
-.mb-0 {
-  margin-bottom: 0; }
-
 .orange {
   color: #f7ac53; }
 
@@ -3779,13 +3776,17 @@ section {
         display: inline-block; }
 
 .testimonials {
-  background: #303030; }
+  background: #303030;
+  overflow: hidden; }
+  .testimonials .section-title {
+    margin-bottom: 4rem; }
 
 .testimonials__logo {
-  margin-bottom: 2rem; }
-
-.testimonials__logo--last {
-  margin-bottom: 0; }
+  margin-bottom: 2rem;
+  min-height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 .team {
   background: black; }
