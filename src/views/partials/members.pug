@@ -11,7 +11,7 @@
 
 mixin members()
     each val, index in members
-        .col-12
+        .col-12.col-md-4.col-lg-3.center-lg
             .member(class=index+1==members.length?'mb-0':'')
                 img.member__img(src=`images/${members[index].imgName}.png`)
                 p.member__name= members[index].name
