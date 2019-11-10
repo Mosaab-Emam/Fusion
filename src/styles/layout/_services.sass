@@ -3,7 +3,8 @@
 
 .services__box
     @extend %center
-    margin-bottom: $marginSmall
+    &:not(:last-of-type)
+        margin-bottom: $marginSmall
 
 .services__box-icon
     font-size: 1.5rem

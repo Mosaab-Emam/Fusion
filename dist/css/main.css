@@ -3619,7 +3619,7 @@ a {
     color: #f7ac53; }
 
 section {
-  padding-bottom: 1.5rem;
+  padding-bottom: 2rem;
   color: white; }
   section .v-line {
     width: 2px;
@@ -3653,7 +3653,7 @@ section {
   position: relative; }
   .header .container {
     padding-top: 6rem;
-    padding-bottom: 1.5rem;
+    padding-bottom: 2rem;
     position: relative;
     z-index: 2; }
   .header .site-logo {
@@ -3693,7 +3693,7 @@ section {
 .services {
   background: #303030; }
 
-.services__box {
+.services__box:not(:last-of-type) {
   margin-bottom: 1.5rem; }
 
 .services__box-icon {
@@ -3711,31 +3711,31 @@ section {
 .projects {
   background: black; }
   .projects .carousel {
-    margin-bottom: 7rem; }
+    margin-bottom: 8rem; }
   .projects .carousel-inner {
     overflow: visible; }
   .projects .carousel-indicators {
     margin-bottom: 0;
-    bottom: -7rem; }
+    bottom: -8rem; }
     .projects .carousel-indicators li.active {
       background-color: #f7ac53; }
   .projects .carousel-item img {
     width: 100%; }
   .projects .carousel-caption {
     padding: 0;
-    bottom: -5rem; }
+    bottom: -6rem; }
     .projects .carousel-caption h3 {
       margin-bottom: 0; }
     .projects .carousel-caption .links {
       margin-top: .5rem; }
-      .projects .carousel-caption .links a:first-of-type {
-        margin-right: .5rem; }
+      .projects .carousel-caption .links a {
+        display: inline-block; }
 
 .testimonials {
   background: #303030; }
 
 .testimonials__logo {
-  margin-bottom: 1rem; }
+  margin-bottom: 2rem; }
 
 .testimonials__logo--last {
   margin-bottom: 0; }
