@@ -3591,6 +3591,12 @@ section .section-name, .header__contact-link, .services__box-link, .founder__nam
   font-size: 14px;
   color: #aaa; }
 
+.services__box {
+  margin-bottom: 1.5rem; }
+  @media (min-width: 576px) {
+    .services__box {
+      margin-bottom: 2rem; } }
+
 .cap {
   text-transform: capitalize; }
 
@@ -3621,6 +3627,9 @@ a {
 section {
   padding-bottom: 2rem;
   color: white; }
+  @media (min-width: 576px) {
+    section {
+      padding-bottom: 4rem; } }
   section .v-line {
     width: 2px;
     height: 4rem;
@@ -3631,10 +3640,13 @@ section {
     color: #f7ac53;
     font-size: .75rem;
     font-weight: bold;
-    margin-bottom: 1.5rem; }
+    margin-bottom: 1rem; }
   section .section-title {
     font-weight: normal;
-    margin-bottom: 1.5rem; }
+    margin-bottom: 2rem; }
+    @media (min-width: 768px) {
+      section .section-title {
+        margin-bottom: 4rem; } }
 
 .site-logo {
   font-family: Merriweather, serif;
@@ -3656,11 +3668,31 @@ section {
     padding-bottom: 2rem;
     position: relative;
     z-index: 2; }
+    @media (min-width: 576px) {
+      .header .container {
+        padding-top: 4rem;
+        padding-bottom: 4rem; } }
   .header .site-logo {
     position: absolute;
     top: 1.5rem;
     left: 50%;
     transform: translateX(-50%); }
+    @media (min-width: 576px) {
+      .header .site-logo {
+        display: none; } }
+    .header .site-logo.site-logo--big-screen {
+      position: unset;
+      left: 0;
+      transform: none;
+      display: none; }
+      @media (min-width: 576px) {
+        .header .site-logo.site-logo--big-screen {
+          display: block; } }
+  @media (min-width: 576px) {
+    .header .link-container {
+      display: flex;
+      justify-content: right;
+      align-items: center; } }
 
 .header__overlay {
   position: absolute;
@@ -3669,16 +3701,24 @@ section {
   left: 0;
   right: 0;
   background: #303030;
-  opacity: .8;
+  opacity: .9;
   z-index: 1; }
 
 .header__h1 {
   border: 1px solid #ddd;
   text-align: center;
   padding: .5rem; }
+  @media (min-width: 576px) {
+    .header__h1 {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      margin-bottom: 1rem; } }
 
 .header__features {
   margin-bottom: 1.5rem; }
+  @media (min-width: 576px) {
+    .header__features {
+      margin-bottom: 4rem; } }
 
 .header__contact-link {
   display: block; }
@@ -3689,12 +3729,19 @@ section {
   font-size: 1.25rem;
   color: #f7ac53;
   cursor: pointer; }
+  @media (min-width: 576px) {
+    .header__angle-down {
+      font-size: 1.5rem;
+      margin: 2rem auto;
+      display: none; } }
 
 .services {
   background: #303030; }
 
-.services__box:not(:last-of-type) {
-  margin-bottom: 1.5rem; }
+@media (min-width: 768px) {
+  .services__box {
+    text-align: left;
+    margin-bottom: 0; } }
 
 .services__box-icon {
   font-size: 1.5rem; }
@@ -3817,9 +3864,12 @@ form {
     margin: auto; }
 
 footer {
-  padding: 1.5rem 0;
+  padding: 2rem 0;
   background: #303030;
   color: white; }
+  @media (min-width: 576px) {
+    footer {
+      padding: 4rem 0; } }
   footer .site-logo {
     margin: 0 auto 2rem; }
 

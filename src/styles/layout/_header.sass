@@ -8,11 +8,28 @@
         padding-bottom: 2rem
         position: relative
         z-index: 2
+        @include media-breakpoint-up(sm)
+            padding-top: 4rem
+            padding-bottom: 4rem
     .site-logo
         position: absolute
         top: $marginSmall
         left: 50%
         transform: translateX(-50%)
+        @include media-breakpoint-up(sm)
+            display: none
+        &.site-logo--big-screen
+            position: unset
+            left: 0
+            transform: none
+            display: none
+            @include media-breakpoint-up(sm)
+                display: block
+    .link-container
+        @include media-breakpoint-up(sm)
+            display: flex
+            justify-content: right
+            align-items: center
 
 .header__overlay
     position: absolute
@@ -21,17 +38,23 @@
     left: 0
     right: 0
     background: $semiDark
-    opacity: .8
-    z-index: 1    
+    opacity: .9
+    z-index: 1
 
 .header__h1
     border: 1px solid #ddd
     text-align: center
     padding: .5rem
+    @include media-breakpoint-up(sm)
+        padding-top: 1rem
+        padding-bottom: 1rem
+        margin-bottom: 1rem
 
 .header__features
     @extend %center
     margin-bottom: $marginSmall
+    @include media-breakpoint-up(sm)
+        margin-bottom: 4rem
 
 .header__contact-link
     @extend %center
@@ -45,3 +68,7 @@
     font-size: 1.25rem
     color: $orange
     cursor: pointer
+    @include media-breakpoint-up(sm)
+        font-size: 1.5rem
+        margin: 2rem auto
+        display: none

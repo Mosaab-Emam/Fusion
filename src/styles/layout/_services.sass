@@ -3,8 +3,10 @@
 
 .services__box
     @extend %center
-    &:not(:last-of-type)
-        margin-bottom: $marginSmall
+    @extend %marginBottomResponsive
+    @include media-breakpoint-up(md)
+        text-align: left
+        margin-bottom: 0
 
 .services__box-icon
     font-size: 1.5rem

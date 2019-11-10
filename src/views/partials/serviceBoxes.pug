@@ -2,9 +2,9 @@
 
 mixin serviceBoxes()
     .row
-        each val in boxes
-            .col-12
-                .services__box
+        each val, index in boxes
+            .col-12.col-sm-10.offset-sm-1.col-md-4.offset-md-0
+                .services__box(class=index+1==boxes.length?'mb-0':'')
                     i.services__box-icon.orange(class=`icon-${val}`)
                     h3.services__box-heading= val
                     p.services__box-description Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda porro placeat asperiores, corporis perferendis ullam!

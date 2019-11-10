@@ -13,6 +13,8 @@ a
 section
     padding-bottom: 2rem
     color: white
+    @include media-breakpoint-up(sm)
+        padding-bottom: 4rem
     .v-line
         @extend %center
         width: 2px
@@ -26,11 +28,13 @@ section
         color: $orange
         font-size: .75rem
         font-weight: bold
-        margin-bottom: $marginSmall
+        margin-bottom: 1rem
     .section-title
         @extend %center
         font-weight: normal
-        margin-bottom: $marginSmall
+        margin-bottom: 2rem
+        @include media-breakpoint-up(md)
+            margin-bottom: 4rem
 
 .site-logo
     @extend %center
