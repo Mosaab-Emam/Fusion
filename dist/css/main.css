@@ -3665,6 +3665,8 @@ section {
     padding-bottom: 2rem;
     position: relative;
     z-index: 2; }
+    .header .container .row {
+      margin: 0; }
     @media (min-width: 576px) {
       .header .container {
         padding-top: 9rem;
