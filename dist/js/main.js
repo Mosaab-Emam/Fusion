@@ -1,1 +1,1 @@
-$(".carousel").carousel();
+$(".carousel").carousel(),$(".contact form .form-control").on("focus",function(){$(this).siblings("label").addClass("focused")}),$(".contact form .form-control").on("blur",function(){$(this)||$(this).siblings("label").removeClass("focused")});
