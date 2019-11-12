@@ -3641,7 +3641,7 @@ section {
   section .section-title {
     font-weight: normal;
     margin-bottom: 2rem; }
-    @media (min-width: 768px) {
+    @media (min-width: 576px) {
       section .section-title {
         margin-bottom: 4rem; } }
 
@@ -3667,8 +3667,17 @@ section {
     z-index: 2; }
     @media (min-width: 576px) {
       .header .container {
-        padding-top: 4rem;
+        padding-top: 9rem;
         padding-bottom: 4rem; } }
+    @media (min-width: 768px) {
+      .header .container {
+        padding-top: 4rem; } }
+    @media (min-width: 992px) {
+      .header .container {
+        padding: 6rem 0; } }
+    @media (min-width: 1200px) {
+      .header .container {
+        padding: 8rem 0; } }
   .header .site-logo {
     position: absolute;
     top: 1.5rem;
@@ -3676,20 +3685,29 @@ section {
     transform: translateX(-50%); }
     @media (min-width: 576px) {
       .header .site-logo {
+        top: 4rem; } }
+    @media (min-width: 768px) {
+      .header .site-logo {
         display: none; } }
     .header .site-logo.site-logo--big-screen {
       position: unset;
       left: 0;
       transform: none;
       display: none; }
-      @media (min-width: 576px) {
+      @media (min-width: 768px) {
         .header .site-logo.site-logo--big-screen {
           display: block; } }
-  @media (min-width: 576px) {
+      @media (min-width: 1200px) {
+        .header .site-logo.site-logo--big-screen {
+          margin: auto; } }
+  @media (min-width: 768px) {
     .header .link-container {
       display: flex;
       justify-content: right;
       align-items: center; } }
+  @media (min-width: 1200px) {
+    .header .link-container {
+      justify-content: center; } }
 
 .header__overlay {
   position: absolute;
@@ -3709,13 +3727,17 @@ section {
     .header__h1 {
       padding-top: 1rem;
       padding-bottom: 1rem;
-      margin-bottom: 1rem; } }
+      margin-bottom: 2rem; } }
+  @media (min-width: 768px) {
+    .header__h1 {
+      padding-left: 2rem;
+      padding-right: 2rem; } }
 
 .header__features {
   margin-bottom: 1.5rem; }
   @media (min-width: 576px) {
     .header__features {
-      margin-bottom: 4rem; } }
+      margin-bottom: 2rem; } }
 
 .header__contact-link {
   display: block; }
@@ -3729,8 +3751,13 @@ section {
   @media (min-width: 576px) {
     .header__angle-down {
       font-size: 1.5rem;
-      margin: 2rem auto;
-      display: none; } }
+      margin-top: 2rem; } }
+  @media (min-width: 992px) {
+    .header__angle-down {
+      margin-top: 4rem; } }
+  @media (min-width: 1200px) {
+    .header__angle-down {
+      margin-top: 6rem; } }
 
 .services {
   background: #303030; }
