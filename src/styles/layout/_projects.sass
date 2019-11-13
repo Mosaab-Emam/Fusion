@@ -1,5 +1,9 @@
 .projects
     background: black
+    .section-name
+        margin-bottom: 2rem
+        @include media-breakpoint-up(sm)
+            margin-bottom: 4rem
     .carousel
         margin-bottom: 8rem
     .carousel-inner
@@ -9,14 +13,44 @@
         bottom: -8rem
         li.active
             background-color: $orange
+        @include media-breakpoint-up(sm)
+            bottom: -3rem
+        @include media-breakpoint-up(lg)
+            bottom: 1rem
     .carousel-item img
         width: 100%
     .carousel-caption
         padding: 0
         bottom: -6rem
+        @include media-breakpoint-up(sm)
+            position: unset
+            top: 0
+            left: 0
+            right: 0
+            bottom: 0
         h3
             margin-bottom: 0
+            @include media-breakpoint-up(sm)
+                position: absolute
+                top: 0
+                background: rgba(0, 0, 0, .5)
+                padding: 1rem
         .links
             margin-top: .5rem
+            @include media-breakpoint-up(sm)
+                margin-top: 2rem
+            @include media-breakpoint-up(lg)
+                margin: 0
+                position: absolute
+                bottom: 0
+                left: 0
+                right: 0
+                padding-top: 2rem
+                padding-bottom: 3rem
+                background: rgba(0, 0, 0, 0.5)
             a
-                display: inline-block
+                display: block
+                @include media-breakpoint-up(sm)
+                    display: inline-block
+                    margin-left: .5rem
+                    margin-right: .5rem
